@@ -87,6 +87,9 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  a.navbar-brand{
+    font-size: 15px;
+  }
   .container-card{
     display: flex;
     flex-direction: column;
