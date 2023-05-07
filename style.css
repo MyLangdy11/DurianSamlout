@@ -88,7 +88,10 @@ img {
 
 @media screen and (max-width: 600px) {
   a.navbar-brand{
-    font-size: 15px;
+    /* font-size: 15px; */
+  }
+  .iconimg{
+    width: 50px;
   }
   .container-card{
     display: flex;
