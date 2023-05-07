@@ -68,6 +68,11 @@ nav.navbar{
   margin: 10px;
   text-align: center;
 }
+.card:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 10;
+}
 .cardH:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -85,16 +90,23 @@ img {
   .container-card{
     display: flex;
     flex-direction: column;
+    ;
   }
   .container-card .card{
     /* width: 60%; */
-    width: calc(80% - 20px);
+    width: calc(100% - 20px);
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
-    
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+  .container-card .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+  transform: scale(1.1);
+  cursor:pointer;
   }
 }
   /* End card item */
@@ -107,7 +119,7 @@ img {
 .container-des h1{
   margin: 20px auto;
   font-family: 'Moul';
-  font-size: 30px;
+  font-size: 20px;
 }
 article {
   --img-scale: 1.001;
